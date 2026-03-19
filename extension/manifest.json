@@ -1,0 +1,38 @@
+{
+    "manifest_version": 3,
+    "name": "ZeroVault Extension",
+    "version": "1.0.0",
+    "description": "Securely access your ZeroVault from any site.",
+    "icons": {
+        "16": "icon128.png",
+        "48": "icon128.png",
+        "128": "icon128.png"
+    },
+    "action": {
+        "default_popup": "index.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "externally_connectable": {
+        "matches": [
+            "http://localhost:3000/*",
+            "http://127.0.0.1:3000/*"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
