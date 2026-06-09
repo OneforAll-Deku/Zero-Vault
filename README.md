@@ -1,4 +1,4 @@
-# 🛡️ ZeroVault
+#  ZeroVault
 
 **ZeroVault** is a privacy-first, local-only password management ecosystem. It combines a high-performance web dashboard with a browser extension for seamless autofill, ensuring your sensitive data never leaves your control.
 
